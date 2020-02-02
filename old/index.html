@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Arvirt</title>
+    
+<!--
+Mini Profile Template
+https://templatemo.com/tm-530-mini-profile
+--> 
+  </head>
+  <body>
+    <!-- Welcome Section -->
+    <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-01.jpg">
+<div class="header" ><div class="buttons-header"> <div class="icon"></div><div class="btn1"><a href='#somos'> Somos </a></div> <div class="btn2"> <a href="portafolio.html">Portafolio</a></div><div class="btn3"> <a href="hablemos.html"> Hablemos</a></div> </div>
+
+<div class="menu">
+	<div id="menu_btn_somos" class="menu-button">S O M O S</div>
+	<div id="menu_btn_portafolio" class="menu-button">P O R T A F O L I O</div> 
+	<div id="menu_btn_hablemos" class="menu-button">H A B L E M O S</div> 
+</div>  
+  
+<div class="btn_menu"><i class="fas fa-bars fa-2x all-color-arvirt"></i></div>
+
+	</div> 
+	<div class="aside">
+		<div id="mail"></div>
+		<div id="fb"></div>
+		<div id="lkd"></div>	 
+		<div id="itg"></div>	 		
+	</div>
+
+	  <div class="container-fluid tm-brand-container-outer">
+        <div class="row">
+          <div class="col-12">
+            <!-- Logo Area -->
+            <!-- Black transparent bg -->
+            <img class="back-home" src="img/back-home.jpg" width=500 />
+			<div class="home">
+			
+				<img class="logo" src="img/logo.png" width=300 />
+				Materializamos<br>
+				<span>grandes ideas,</span><br>
+				construimos <br>
+				<span>experiencias</span> <br>
+				incre&iacute;bles.
+				
+				
+			</div>
+			
+          </div>
+        </div>
+      </div>
+
+      <div id="somos" class="tm-bg-blue-01 tm-welcome-container">
+        <div class="container-fluid">
+          <div class="row h-100">
+            <!-- Welcome Text -->
+            <!-- White transparent bg -->
+            <div class="col-md-7 tm-welcome-left-col">
+              <div class="tm-welcome-left">
+                <h2 class="tm-welcome-title">SOMOS</h2>
+                <p class="pb-0">
+                  Somos una empresa especializada en el desarrollo de contenidos audiovisuales e interactivos 2D y 3D; dise&ntilde;amos y desarrollamos  experiencias incre&iacute;bles.<br> Estamos conformados por un grupo de profesionales con una amplia experiencia en los campos de dise&ntilde;o gr&aacute;fico, producci&oacute;n multimedia, desarrollo 3D, interactividad y programaci&oacute;n. </p>
+              </div>
+            </div>
+            <!-- Brown bg -->
+            <div class="col-md-5">
+              <div class="tm-welcome-right">
+                <img src="img/graph-01.png" width=320 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Welcome section -->
+
+    <!-- Portfolio section -->
+    <section id="tmPortfolio">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            
+
+            
+            <img src="img/somos.jpg" id="somos1" />
+
+           
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End portfolio section -->
+
+    <!-- Contact section -->
+    <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-02.jpg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            
+          </div>
+        </div>
+        <!-- row -->
+        <div class="row">
+          <footer class="col-12">
+            <p class="text-center tm-copyright-text">
+            Todos los derechos reservados ARVIRT 2010 - 2019 
+            
+          </footer>
+        </div>
+      </div>
+      <!-- container -->
+    </div>
+    <!-- section -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+	<script src="js/home.js"></script>
+    <script>
+      function detectMsBrowser() {
+        using_ms_browser =
+          navigator.appName == "Microsoft Internet Explorer" ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Edge") > -1) ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Trident") > -1);
+
+        if (using_ms_browser == true) {
+          alert(
+            "Please use Chrome or Firefox for the best browsing experience!"
+          );
+        }
+      }
+      function setBrandMarginTop() {
+        var bottomContainerHeight = $(".tm-welcome-container").height();
+
+        $(".tm-brand-container-outer").css({
+          "margin-top": -bottomContainerHeight + "px"
+        });
+      }
+
+      $(function() {
+        setBrandMarginTop();
+        detectMsBrowser();
+
+        // Handle window resize event
+        $(window).resize(function() {
+          setBrandMarginTop();
+        });
+      });
+    </script>
+  </body>
+</html>

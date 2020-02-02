@@ -1,0 +1,363 @@
+/* Primer contenedor de la pagina de inicio, aqui se encuentra el texto Materializamos... con la imagen del hombre y las gafas AR */
+
+#tmWelcome {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  height:200px;
+}
+
+.tm-brand-container-outer {
+  margin-top: -400px;
+}
+
+.parallax-window {
+  background: transparent;
+}
+
+#lineas{
+	position:fixed;
+	width:500px;
+	height:700px;
+	top:0px;
+	left:50%;
+	z-index:-1;
+	display:inline;
+}
+
+/* Imagen hombre con gafas AR y su respectiva animacion /*/
+
+.back-home{
+	
+	position:fixed;
+	padding-top:64px;
+	left:30%;
+	bottom:0px;
+	-webkit-animation: anim 10s infinite; /* Safari 4+ */
+    -moz-animation:    anim 10s infinite; /* Fx 5+ */
+    -o-animation:      anim 10s infinite; /* Opera 12+ */
+    animation:         anim 10s infinite; /* IE 10+, Fx 29+ */
+	z-index:0;
+	
+}
+
+.arrow-down-white{
+
+	position:absolute;
+	bottom:40px;
+	right:50px;
+	width:34px;
+	height:17px;
+	background:url(../img/arrow-down-white.png);
+}
+
+.arrow-down-white:hover{
+	width:36px;
+	height:19px;
+	background:url(../img/arrow-down-white.png);
+	background-size:100% 100%;
+}
+
+.arrow-down-blue{
+
+	position:absolute;
+	bottom:40px;
+	right:50px;
+	width:34px;
+	height:17px;
+	background:url(../img/arrow-down-blue.png);
+}
+
+.arrow-down-blue:hover{
+	width:36px;
+	height:19px;
+	background:url(../img/arrow-down-blue.png);
+	background-size:100% 100%;
+}
+
+@-webkit-keyframes anim {
+  0%   { top: 0px;left:30%; }
+  30%   { top: 10px;left:30.5%; }
+  60%   { top: 16px;left:31%; }
+  80%   { top: 10px;left:30.5%; }
+  100% { top: 0px;left:30%; }
+}
+@-moz-keyframes anim {
+  0%   { top: 0px;left:30%; }
+  30%   { top: 10px;left:30.5%; }
+  60%   { top: 16px;left:31%; }
+  80%   { top: 10px;left:30.5%; }
+  100% { top: 0px;left:30%; }
+}
+@-o-keyframes anim {
+  0%   { top: 0px;left:30%; }
+  30%   { top: 10px;left:30.5%; }
+  60%   { top: 16px;left:31%; }
+  80%   { top: 10px;left:30.5%; }
+  100% { top: 0px;left:30%; }
+}
+@keyframes anim {
+  0%   { top: 0px;left:30%; }
+  30%   { top: 10px;left:30.5%; }
+  60%   { top: 16px;left:31%; }
+  80%   { top: 10px;left:30.5%; }
+  100% { top: 0px;left:30%; }
+}
+
+/* Texto de materializamos ideas */
+
+
+.home{
+    font-family: 'Myriad Pro Bold';
+	position:relative;
+	top:180px;
+	width:500px;
+	left:20%;
+	font-size:200%;
+	font-weight:bold;
+	color:#6cb3e5;
+	line-height: 1em;
+	
+}
+
+.home span{
+	
+	color:#B5C9F7;
+	
+}
+
+/* Secciones */
+
+.section1{
+	position:relative;
+	width:100%;
+	background:white;
+	padding:30px;
+}
+
+.section2{
+	position:relative;
+	width:100%;
+	background:url('../img/bg2.jpg');
+	background-size:100% 100%;
+	padding:30px;
+}
+
+.section3{
+	
+	width:100%;
+	height:780px;
+	background:#fff;
+	padding-top:100px
+	
+}
+/* Titulo de las secciones */
+
+.titleSection1{
+	position:relative;
+	margin-top:50px;
+	margin:30px;
+	font-family: 'Myriad Pro Bold';
+	font-size:300%;
+	font-weight:bold;
+	line-height:1.1;
+	color:#253858;
+}
+
+.titleSection2{
+	position:relative;
+	font-family: 'Myriad Pro Bold';
+	font-size:300%;
+	font-weight:bold;
+	letter-spacing:6px;
+	line-height:1.1;
+	color:#47bcf1;
+	margin:30px;
+}
+
+/* Texto de las secciones */
+
+.textSection2{
+	font-size:140%;
+	font-family:"Myriad Pro Light";
+	position:relative;
+	margin-top:10px;
+	width:30%;
+	display:inline-block;
+	padding-left:40px;
+	letter-spacing:0px;
+	color:#41577C;
+	text-align:justify;
+}
+
+.textSection2 span{
+	font-family:"Myriad Pro Bold";
+	color:#253858;
+}
+
+.textSection2_2{
+	font-size:136%;
+	font-family:"Myriad Pro Light";
+	position:relative;
+	margin-top:80px;
+	width:30%;
+	display:inline-block;
+	padding-left:40px;
+	letter-spacing:0px;
+	color:#41577C;
+	text-align:justify;
+}
+
+.textSection2_2 span{
+	font-family:"Myriad Pro Bold";
+	color:#253858;
+}
+
+.textSection2_2 a{
+	font-size:80%;
+	font-family:"Myriad Pro Bold";
+	color:#51B8EE;
+	font-weight:bold;
+	letter-spacing:8px;
+}
+
+.textSection3{
+	font-family:"Myriad Pro Bold";
+	margin-left:15%;
+	font-size:120%;
+	line-height:1.4;
+	letter-spacing:8px;
+	color:#41577C;
+}
+
+.textSection3 span{
+	color:#47bcf1;
+}
+
+
+/*  ITems servicios */
+
+.img_servicios{
+	position:relative;
+	left:0px;
+    cursor:pointer;
+    width:200px;
+}
+
+
+.img_servicios:hover{
+	position:relative;
+	animation: img_servicios_anim 1s linear; 
+	-webkit-animation: img_servicios_anim 1s linear; 
+	-moz-animation: img_servicios_anim 1s linear;   
+	-o-animation: img_servicios_anim 1s linear; 
+	animation-fill-mode: forwards;
+}
+
+@keyframes img_servicios_anim {
+	0% {left:0px;width:200px;}
+	30% {left:-10px;width:220px;}
+	50% {left:-5px;width:210px;}
+	100% {left:-5px;width:210px;}
+}
+
+
+.item_servicios{
+    position:relative;
+    width:200px;
+	height:200px;
+    text-align:left;
+    display:inline-block;
+}
+
+.div{
+    position:relative;
+    display:inline-block;
+	width:2px;
+	height:120px;
+	top:-60px;
+	background-image:url('../img/div.png');
+	background-size:100% 100%;
+	z-index:1;
+}
+
+.item_servicios_container{
+    position:absolute;
+    width:200px;
+	height:200px;
+    text-align:center;
+    display:inline-block;
+}
+
+/*  ITems indicadores */
+
+.item_indicadores{
+    position:relative;
+    width:100px;
+    text-align:center;
+    display:inline-block;
+}
+
+.sliderContainer{
+	position:relative;
+	margin:90px;
+	margin-top:10px;
+	margin-bottom:10px;
+	overflow:hidden
+}
+
+.sliderLogos{
+	display: flex;
+	padding: 0;
+	width: 3220px;
+	animation: cambio 30s infinite alternate linear;
+	-webkit-animation: cambio 30s infinite alternate linear;
+	-moz-animation: cambio 30s infinite alternate linear;
+	-o-animation: cambio 30s infinite alternate linear;
+}
+
+.sliderLogos img{
+	display:inline-block;
+	width:200px;
+	margin-left:30px;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	40% {margin-left: -100%;}
+	60% {margin-left: -100%;}
+	
+	80% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+}
+
+.logosInternacional{
+	
+	position:relative;
+	margin:90px;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align:center;
+}
+
+.logosInternacional img{
+	display:inline-block;
+	width:200px;
+	margin-left:30px;
+}
+
+.arrow-right{
+	position:relative;
+	top:4px;
+	width:50px;
+	height:20px;
+	background:url('../img/arrow-right.png');
+	background-size:100% 100%;
+	display:inline-block;
+}

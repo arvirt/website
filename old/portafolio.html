@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Arvirt</title>
+    
+<!--
+Mini Profile Template
+https://templatemo.com/tm-530-mini-profile
+-->
+  </head>
+  <body>
+    <!-- Welcome Section -->
+    <section id="tmWelcomePorfolio" class="parallax-window-p" data-parallax="scroll" >
+<div class="header" ><div class="buttons-header"> <div class="icon"></div><div class="btn1"><a href='index.html#somos'> Somos </a></div> <a href="#"><div class="btn2"> Portafolio</a></div><div class="btn3"> <a href="hablemos"> Hablemos</a></div> </div>
+<div class="menu">
+	<div id="menu_btn_somos" class="menu-button">S O M O S</div>
+	<div id="menu_btn_portafolio" class="menu-button">P O R T A F O L I O</div> 
+	<div id="menu_btn_hablemos" class="menu-button">H A B L E M O S</div> 
+</div>  
+
+	</div> 
+	  <div id="titleP" >PORTAFOLIO</div>
+		  <div id="portfolio_items" >
+				<div class="portfolio_items_class" >Aulas <br>Virtuales</div><div class="portfolio_items_class" >Gamification</div><div class="portfolio_items_class" >Realidad <br>Virtual</div><div class="portfolio_items_class" >Realidad <br>Aumentada</div><div class="portfolio_items_class" >Animaci&oacute;n 2D</div><div class="portfolio_items_class" >Animaci&oacute;n 3D</div>
+				<div class="portfolio_items_class" >Video<br> Tradicional</div><div class="portfolio_items_class" >Proyectos<br> Especiales</div>
+		  </div> 
+    </section>
+ 
+	<section class="portfolio_content">
+	
+		<div class="portfolio_object" id="elm_1"></div>
+		<div class="portfolio_object" id="elm_2"></div>
+		<div class="portfolio_object" id="elm_3"></div>
+		<div class="portfolio_object" id="elm_4"></div>
+		<div class="portfolio_object" id="elm_5"></div>
+		<div class="portfolio_object" id="elm_6"></div>
+		 
+	</section>
+    <!-- End Welcome section -->
+  
+    <!-- Portfolio section -->
+
+    <!-- End portfolio section -->
+
+    <!-- Contact section -->
+    <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-02.jpg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            
+          </div>
+        </div>
+        <!-- row -->
+        <div class="row">
+          <footer class="col-12">
+            <p class="text-center tm-copyright-text">
+            Todos los derechos reservados ARVIRT 2010 - 2019 
+            
+          </footer>
+        </div>
+      </div>
+      <!-- container -->
+    </div>
+    <!-- section -->
+    <script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/responsive.js"></script>
+    <script>
+      function detectMsBrowser() {
+        using_ms_browser =
+          navigator.appName == "Microsoft Internet Explorer" ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Edge") > -1) ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Trident") > -1);
+
+        if (using_ms_browser == true) {
+          alert(
+            "Please use Chrome or Firefox for the best browsing experience!"
+          );
+        }
+      }
+      function setBrandMarginTop() {
+        var bottomContainerHeight = $(".tm-welcome-container").height();
+
+        $(".tm-brand-container-outer").css({
+          "margin-top": -bottomContainerHeight + "px"
+        });
+      }
+
+      $(function() {
+        setBrandMarginTop();
+        detectMsBrowser();
+
+        // Handle window resize event
+        $(window).resize(function() {
+          setBrandMarginTop();
+        });
+      });
+	 
+	$('.header').css('background','#6cb3e5');
+	$('.buttons-header').css('display','inline-block');
+
+    </script>
+  </body>
+</html>

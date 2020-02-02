@@ -1,0 +1,185 @@
+#contact{
+	margin-top:150px;
+}
+
+#titleH{
+	font-family: 'Myriad Pro Bold';
+	letter-spacing:4px;
+	position:absolute;
+	width:150px;
+	height:50px;
+	top:60px;
+	left:100px;
+	font-size:300%;
+	font-weight:bold;
+	margin:20px;
+	color:#4FAEE3;
+}
+
+
+.contact_text_class{
+	font-family: 'Myriad Pro Regular';
+	position:absolute;
+	letter-spacing:1px;
+	width:500px;
+	height:100px;
+	right:20px;
+	top:-64px;
+	text-align:left;
+	font-size:100%;
+	color:#A7BAC2;
+}
+
+#contact_items{
+	font-family: 'Myriad Pro Light';
+	position:relative;
+	width:80%;
+	text-align:center;
+	height:650px;
+	top:40px;
+	margin:auto;
+}
+
+
+.hablemosGuion{
+	position:relative;
+	color:white;
+	top:-70px;
+}
+
+.type1_form{
+	margin-top:30px;
+	display:inline-block;
+	width:30%;
+	text-align:left;
+	color:#eee;
+	
+}
+
+.type1_input_form{
+	width:100%;
+	background-color: transparent;
+    border: 0px solid;
+	border-bottom:solid 1px #315173;
+	color:#bbb;
+}
+
+.type1_input_form:focus{
+	width:100%;
+	background-color: transparent;
+    border: 0px solid;
+	border-bottom:solid 1px #315173;
+	outline:none;
+	color:#bbb;
+}
+
+#inp1{
+	
+	width:29.5%;
+}
+
+
+#inp2{
+	
+	width:39.5%;
+}
+
+
+
+#inp3{
+	
+	width:29.5%;
+}
+
+
+.type2_form{
+	position:relative;
+	margin:auto;
+	margin-top:30px;
+	width:100%;
+	text-align:left;
+	color:#eee;
+	
+}
+
+.type3_form{
+	position:relative;
+	margin:auto;
+	margin-top:30px;
+	display:inline-block;
+	width:100%;
+	text-align:left;
+	color:#eee;
+	
+}
+
+
+.type3_form{
+	position:relative;
+	margin:auto;
+	margin-top:30px;
+	display:inline-block;
+	width:100%;
+	text-align:left;
+	color:#eee;
+	
+}
+
+.type2_input_form{
+	width:100%;
+	background-color: transparent;
+    border: 0px solid;
+	border-bottom:solid 1px #315173;
+	color:#bbb;
+}
+
+.type2_input_form:focus{
+	
+	background-color: transparent;
+    border: 0px solid;
+	border-bottom:solid 1px #315173;
+	outline:none;
+	color:#bbb;
+}
+
+
+.type3_textarea_form{
+	position:relative;
+	margin:auto;
+	width:100%;
+	height:120px;
+	background-color: transparent;
+    border: 0px solid;
+	border-bottom:solid 1px #315173;
+	color:#bbb;
+}
+
+.type3_textarea_form:focus{
+	
+	background-color: transparent;
+    border: 0px solid;
+	border-bottom:solid 1px #315173;
+	outline:none;
+	color:#bbb;
+}
+
+
+#lineas{
+	position:absolute;
+	width:500px;
+	height:700px;
+	top:10px;
+	left:50%;
+	z-index:-1;
+	display:inline;
+}
+
+#enviarMensaje{
+	font-family: 'Myriad Pro Regular';
+	letter-spacing:4px;
+	color:white;
+	position:absolute;
+	right:10px;
+	cursor:pointer;
+}
+

@@ -1,0 +1,599 @@
+/**
+/**
+
+Mini Profile Template
+
+https://templatemo.com/tm-530-mini-profile
+
+
+Color Codes
+------------
+brown: #986665;
+green: #98cb00;
+orange: #cc6733;
+blue: #3398cc;
+dark-gray: #676767;
+light-gray: #999999;
+text-gray: #6b6b6b;
+
+*/
+
+
+
+
+
+.tm-bg-black-transparent {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tm-bg-blue-01 {
+  background-color: #deeff7;
+}
+
+.tm-bg-green {
+  background-color: #98cb00;
+}
+
+.tm-bg-orange {
+  background-color: #cc6733;
+}
+
+.tm-bg-blue {
+  background-color: #3398cc;
+}
+
+.tm-bg-dark-gray {
+  background-color: #676767;
+}
+
+/*
+  Welcome section
+*/
+
+
+#tmWelcomePortfolio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+}
+
+#titleP{
+	
+	position:absolute;
+	width:150px;
+	height:50px;
+	top:80px;
+	left:500px;
+	font-size:300%;
+	color:white;
+}
+
+.tm-brand-container-inner {
+  max-width: 580px;
+  width: 100%;
+}
+
+.tm-brand-container {
+  padding: 75px 110px;
+}
+
+.tm-brand-name {
+  font-size: 3.8rem;
+}
+
+.tm-brand-description {
+  font-size: 1.4rem;
+}
+
+
+
+.parallax-window-p {
+
+  background: #04516f;
+  min-height: 420px;
+  color:white;
+}
+
+.parallax-window-h {
+
+  background: #fff;
+  min-height: 420px;
+
+}
+
+.tm-welcome-container {
+  min-height: 400px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.tm-welcome-title {
+  margin-bottom: 40px;
+}
+
+.tm-welcome-left {
+  padding-right: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.tm-welcome-left-col {
+  display: flex;
+  align-items: center;
+}
+
+.tm-welcome-right {
+  color: white;
+  background-color: #deeff7;
+  padding: 80px 43px 70px;
+  height: 100%;
+}
+
+.tm-welcome-icon {
+  margin-bottom: 50px;
+  display: block;
+  text-align: center;
+}
+
+/*
+  Portfolio section
+*/
+
+#tmPortfolio {
+  padding-top: 80px;
+}
+
+.tm-portfolio-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+ 
+.tm-portfolio-name {
+  width: 330px;
+  height: 220px;
+  font-size: 2rem;
+  padding: 70px 95px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.tm-portfolio-description {
+  width: calc(100% - 330px);
+  padding: 20px 45px;
+}
+
+.tm-portfolio-description h3 {
+  margin-bottom: 20px;
+}
+
+.tm-text-green {
+  color: #98cb00;
+}
+
+.tm-text-orange {
+  color: #cc6733;
+}
+
+.tm-text-blue {
+  color: #3398cc;
+}
+
+.tm-text-dark-gray {
+  color: #676767;
+}
+
+.tm-title-small {
+  font-size: 1.3rem;
+}
+
+p {
+  line-height: 1.8;
+}
+
+/*
+  Contact section
+*/
+
+#tmContact {
+  padding-top: 95px;
+}
+
+.tm-contact-item {
+  width: 33.3334%;
+  max-width: 345px;
+  height: auto;
+  min-height: 420px;
+  margin-right: 35px;
+  background-color: white;
+  padding: 54px 34px 44px;
+}
+
+.tm-contact-item:last-child {
+  margin-right: 0;
+}
+
+.tm-contact-items-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 130px;
+}
+
+.tm-contact-item-icon {
+  margin-bottom: 45px;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tmContactForm {
+  width: 100%;
+  max-width: 680px;
+  padding: 45px 45px 30px;
+  margin-bottom: 95px;
+}
+
+.form-group {
+  max-width: 355px;
+}
+
+.form-control {
+  background: transparent;
+  border-color: #999999;
+  padding: 15px 10px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.tm-btn-submit {
+  background-color: #999999;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+}
+
+.tm-btn-submit:focus,
+.tm-btn-submit:hover {
+  background-color: #676767;
+}
+
+.tm-copyright-text {
+  bottom: 10px;
+  color:#A7BAC2;
+  font-weight:normal;
+  font-size:60%;
+}
+
+.tm-link {
+  color: #676767;
+}
+
+@media (max-width: 1054px) {
+  .tm-contact-item-icon {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .tm-contact-items-container {
+    flex-direction: column;
+  }
+
+  .tm-contact-item {
+    width: auto;
+    max-width: 680px;
+    min-height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  .tm-contact-item:last-child {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  #tmContactForm {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+
+
+.aside{
+	
+	position:absolute;
+	width:60px;
+	height:450px;
+	left:0px;
+	top:100px;
+	background:#6cb3e5;
+	
+}
+
+.btn_menu{
+	
+	position:absolute;
+	width:50px;
+	height:60px;
+	right:10px;
+	top:100px;
+	cursor:pointer;
+}
+
+.menu{
+
+	position:fixed;
+	display:none;
+	width:100%;
+	height:100%;
+	left:0px;
+	top:0px;
+	background:url('../img/02-menu.jpg');
+	background-size:100% 100%;
+
+}
+
+
+
+.icon{
+	position:relative;
+	left:50px;
+	width:40px;
+	height:34px;
+	margin-left:100px;
+	background:url(../img/icon.png);
+	background-size:100% 100%;
+	display:inline-block;
+}
+
+
+
+.menu-button{
+	position:relative;
+	width:600px;
+	height:80px;
+	left:50%;
+	top:10%;
+	font-size:300%;
+	font-weight:bold;
+	color:white;
+	margin-top:80px;
+	cursor:pointer; 
+} 
+
+
+@media (max-width: 730px) {
+  .tm-portfolio-item {
+    flex-direction: column;
+  }
+
+  .tm-portfolio-name {
+    justify-content: center;
+  }
+
+  .tm-portfolio-name,
+  .tm-portfolio-description {
+    width: 100%;
+  }
+
+  .tm-portfolio-description {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 572px) {
+  .tm-brand-container {
+    padding: 45px;
+  }
+}
+
+@media (max-width: 443px) {
+  .tm-brand-name {
+    font-size: 3rem;
+  }
+
+  .tm-brand-container {
+    padding: 25px;
+  }
+}
+
+#somos1{
+	
+width:100%;
+height:auto;
+	
+}
+
+.all-color-arvirt{
+	
+	color:#6cb3e5;
+	
+}
+
+#mail{
+	position:absolute;
+	width:60px;
+	height:60px;
+	left:-1px;
+	bottom:0px;
+	background:url('../img/mail.png');
+	background-size:100% 100%;
+	cursor:pointer;
+}
+
+#fb{
+	position:absolute;
+	width:36px;
+	height:100px;
+	left:10px;
+	bottom:80px;
+	background:url('../img/fb.png');
+	background-size:100% 100%;
+	cursor:pointer;
+}
+
+
+#lkd{
+	position:absolute;
+	width:36px;
+	height:100px;
+	left:10px;
+	bottom:205px;
+	background:url('../img/lkd.png');
+	background-size:100% 100%;
+	cursor:pointer;
+}
+
+#itg{
+	position:absolute;
+	width:36px;
+	height:100px;
+	left:10px;
+	bottom:330px;
+	background:url('../img/itg.png');
+	background-size:100% 100%;
+	cursor:pointer;
+}
+
+#portfolio_items{
+	
+	position:relative;
+	width:100%;
+	text-align:center;
+	top:200px;
+	height:300px;
+}
+
+
+
+.contact_form{
+	
+	width:70%;
+	height:auto;
+	margin:auto;
+	text-align:left;
+}
+
+.portfolio_items_class{
+ 
+	position:relative;
+	color:white; 
+	margin:10px;
+	width:300px;
+	height:60px;
+    display:inline-block;
+	cursor:pointer;
+}
+
+.portfolio_content{
+	
+	position:relative;
+	margin:20px;
+	top:0px;
+	background:white;
+	vertical-align:top;
+	text-align:center;
+	
+}
+
+.portfolio_object{
+	
+	position:relative;
+	width:520px;
+	height:700px;
+	top:0px;
+	background:black;
+	vertical-align: middle;
+	margin-top:20px;
+	display:inline-block;
+	
+}
+
+#elm_1{
+	
+	height:600px;
+	background:url('../img/portfolio/02.jpg');
+	background-size:100% 100%;
+	
+}
+
+#elm_2{
+	
+	height:350px;
+	background:url('../img/portfolio/01.jpg');
+	background-size:100% 100%;
+	
+}
+
+#elm_3{
+	
+	height:360px;
+	background:url('../img/portfolio/03.jpg');
+	background-size:100% 100%;
+}
+
+#elm_4{
+	
+	height:460px;
+	background:url('../img/portfolio/04.jpg');
+	background-size:100% 100%;
+	
+}
+
+#elm_5{
+	
+	height:680px;
+	background:url('../img/portfolio/05.jpg');
+	background-size:100% 100%;
+	
+}
+
+#elm_6{
+	
+	height:580px; 
+	background:url('../img/portfolio/06.jpg');
+	background-size:100% 100%;
+}
+
+
+#enviarMensaje{
+	color:#ddd;
+	background:transparent;
+	cursor:pointer;
+	position:absolute;
+	right:100px;
+}
+
+.img_servicios{
+    cursor:pointer;
+    width:160px;
+}
+
+.img_servicios:hover{
+    width:170px;
+}
+
+.item_servicios{
+    position:relative;
+    width:200px;
+    text-align:center;
+    display:inline-block;
+}
+
+.item_indicadores{
+    position:relative;
+    width:100px;
+    text-align:center;
+    display:inline-block;
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/contact.css" />
     <title>Arvirt</title>
     
 <!--
@@ -15,42 +16,92 @@ Mini Profile Template
 https://templatemo.com/tm-530-mini-profile
 --> 
   </head>
-  <body style='background:url("img/bg2.jpg");background-size:100% auto;'>
+  <body>
     <!-- Welcome Section -->
-    <section >
-<div class="header" >
-	<div class="buttons-header"> 
-		  <div id='btn1' class="btn-menu-b"><a href='index.html#nosotros'> NOSOTROS </a></div> 
-		  <div id='btn2' class="btn-menu-b active-b"> <a href="portafolio.html">PORTAFOLIO</a></div>
-		  <div id='btn3' class="btn-menu-b"> <a href="hablemos.html"> HABLEMOS</a></div>
+   	<div class="header" >
+	  <img class="logo" src="img/logoArvirtBlancoHeader.png" width=80 />
+	  <div class="buttons-header"> 
+		  <div id='btn1' class="btn-menu"><a href='index.html#nosotros'> NOSOTROS </a></div> 
+		  <div id='btn2' class="btn-menu"> <a href="portafolio.html">PORTAFOLIO</a></div>
+		  <div id='btn3' class="btn-menu active"> <a href="hablemos.html"> HABLEMOS</a></div>
 		  <div class="btn-div" >|</div>
-		  <div id='btn4' class=" btn-menu-b">  <p style='font-weight:bold;display:inline-block;color:#004A7E'>ESP</p> <a href='#'>ENG</a></div>
+		  <div id='btn4' class=" btn-menu">   <p style='font-weight:bold;display:inline-block;color:white'>ESP</p> ENG</div>
 	  </div>
-</div> 
-<img class="logo" src="img/logo.png" width=80 />
-	  <div style='position:relative;width:100%;height:10px;background-size:100% 100%'></div>
-    <!-- End portfolio section -->
-</section>
-<section>
+	</div> 
+<img id="lineas" src="img/3D-lineas.png" />
+<section id="contact">
 
-    <div style='position:relative;width:100%;background-size:100% 100%'>
-            <div style='position:relative;font-size:200%;font-weight:bold;line-height:1.1;margin-top:120px;margin-left:80px;'>
-                    NUESTRO
-                    <br><span style='color:#47bcf1'>TRABAJO<br>
-                        <span style='color:#015a83'>&#151;</span>
-                    </div>
+		  <div id="titleH" >HABLEMOS  <p class="hablemosGuion" style='font-size:120%'>_</p></div>
 
-            <div style='position:relative;width:80%;margin:auto;margin-top:60px;margin-bottom:60px;text-align:center;'>
-                <div style='width:450px;height:360px;background:url("img/Portafolio/video.jpg");background-size:100% 100%;display:inline-block;cursor:pointer;margin:20px'></div>
-                <div style='width:450px;height:360px;background:url("img/Portafolio/animacion3D.jpg");background-size:100% 100%;display:inline-block;cursor:pointer;margin:20px'></div>
-                <div style='width:450px;height:360px;background:url("img/Portafolio/animacion2D.jpg");background-size:100% 100%;display:inline-block;cursor:pointer;margin:20px'></div>                    
-                <div style='width:450px;height:360px;background:url("img/Portafolio/realidadvirtual.jpg");background-size:100% 100%;display:inline-block;cursor:pointer;margin:20px'></div>          
-                <div style='width:450px;height:360px;background:url("img/Portafolio/realidadaumentada.jpg");background-size:100% 100%;display:inline-block;cursor:pointer;margin:20px'></div>          
-                <div style='width:450px;height:360px;background:url("img/Portafolio/aulasvirtuales.jpg");background-size:100% 100%;display:inline-block;cursor:pointer;margin:20px'></div>          
-                <div style='width:450px;height:360px;background:url("img/Portafolio/gamification.jpg");background-size:100% 100%;display:inline-block;cursor:pointer;margin:20px'></div>          
-              </div> 
-    </div> 
+		  <div id="contact_items" > 
 
+				<div class="contact_text_class" >Tell us what's on your mind and we'll be happy to get in <br> touch with you, by phone or email - it's up to you.</div>
+
+					<div class="contact_form">
+
+						<div class="type1_form" id="inp1">
+
+							Nombre<br>
+
+							<input class="type1_input_form" type="text" name="name"/>
+
+						 	
+
+						</div>
+
+						<div class="type1_form" id="inp2">
+
+							Email<br>
+
+							<input class="type1_input_form" type="text" name="email"/>
+
+							
+
+						</div>
+
+						<div class="type1_form" id="inp3">
+
+							Asunto<br>
+
+							<input class="type1_input_form" type="text" name="asunto"/>
+
+							
+
+						</div>
+
+						
+
+						<div class="type2_form">
+
+							Nombre de la Empresa<br>
+
+							<input class="type2_input_form" type="text" name="company_name"/>
+
+							
+
+						</div>
+
+						
+
+						<div class="type3_form">
+
+							Mensaje<br>
+
+							<textarea class="type3_textarea_form" type="text" name="message">
+
+							
+
+							</textarea>
+
+						</div>
+
+						<br><br>
+
+				<input type="submit" class="d-none" value="Send" />
+				<label class="btn" id="enviarMensaje" >ENVIAR</label>
+				</div>
+
+		  </div> 
 </section>
     <!-- Contact section -->
 <section id="footerSection">
@@ -115,6 +166,7 @@ https://templatemo.com/tm-530-mini-profile
     <script src="js/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
 	<script src="js/home.js"></script>
+	<script src="js/responsive.js"></script>
     <script>
       function detectMsBrowser() {
         using_ms_browser =
