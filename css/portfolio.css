@@ -1,0 +1,366 @@
+/* Estilos de ProjectArq*/
+
+#container_frame{
+    position:relative;
+    width:975px;
+    height:550px;
+    margin:auto;
+}
+
+#container_proyectArq{
+    position:relative;
+    top:0px;
+    background-size:100% 100%;
+    width:100%;
+    text-align:center;
+    height:700px;
+}
+
+#title_projectArq{
+    font-size:220%;
+    font-family:'Myriad Pro Bold';
+    letter-spacing:0.22em;
+    color:#51B7ED;
+}
+
+#frame_projectArq{
+    position:relative;
+    margin:auto;
+    top:0px;
+}
+
+#img_projectArq{
+    position:relative;
+    top:100px;
+    width:100%;
+}
+
+#btn_next{
+    cursor:pointer;
+    position:absolute;
+    top:390px;
+    width:20px;
+    right:0px;
+    height:30px;
+    transition: filter 1s ease;
+	-moz-transition: filter 1s ease;
+	-webkit-transition: filter 1s ease;
+	-o-transition: filter 1s ease;
+    background:url('../Portafolio/ProjectArq/img/btn_siguiente.png');
+    background-size:100% 100%;
+    margin-top:90px;
+}
+#btn_next:hover{
+    filter:hue-rotate(-20deg) brightness(3);
+}
+
+#btn_back{
+    cursor:pointer;
+    position:absolute;
+    top:387px;
+    width:20px;
+    left:5px;
+    height:30px;
+    background:url('../Portafolio/ProjectArq/img/btn_siguiente.png');
+    background-size:100% 100%;
+    margin-top:90px;
+    transition: filter 1s ease;
+	-moz-transition: filter 1s ease;
+	-webkit-transition: filter 1s ease;
+	-o-transition: filter 1s ease;
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    visibility: hidden;
+}
+#btn_back:hover{
+    filter:hue-rotate(-20deg) brightness(3);
+}
+
+#btn_back.projectArq,#btn_next.projectArq{
+    top:280px;
+}
+
+#btn_gallery{
+    cursor:pointer;
+    position:relative;
+    top:-150px;
+    width:200px;
+    left:12%;
+    height:48px;
+    transition: filter 1s ease;
+	-moz-transition: filter 1s ease;
+	-webkit-transition: filter 1s ease;
+	-o-transition: filter 1s ease;
+    background:url('../Portafolio/ProjectArq/img/btn_galeria.png');
+    background-size:100% 100%;
+    margin-top:90px;
+}
+
+#btn_gallery:hover{
+    filter: hue-rotate(4deg) brightness(0.5);
+}
+
+#a_btn_exit{
+    position:absolute;
+    right:40px;
+    top:550px;
+}
+
+#btn_exit{
+    width:175.2px;
+    height:17.6px;
+    transition: filter 1s ease;
+	-moz-transition: filter 1s ease;
+	-webkit-transition: filter 1s ease;
+    -o-transition: filter 1s ease;
+    cursor:pointer;
+    background:url('../Portafolio/ProjectArq/img/btn_regresar.png');
+    background-size:100% 100%;
+}
+
+#btn_exit:hover{
+    filter: hue-rotate(25deg) brightness(0.4);
+}
+
+#a_btn_exit_arq{
+    position:absolute;
+    right:40px;
+    top:790px;
+}
+
+#plus{
+    position:absolute;
+    top:60px;
+    right: -30px;
+    width:40px;
+    height:40px;
+    background:url('../img/minus.png');
+    background-size:100% 100%;
+    cursor:pointer;
+    transition: filter 1s ease;
+	-moz-transition: filter 1s ease;
+	-webkit-transition: filter 1s ease;
+	-o-transition: filter 1s ease;
+}
+
+#plus:hover{
+    filter: hue-rotate(0deg) brightness(1.6);
+}
+
+#img-piezasGraficas{
+    width:875px;
+    height:489px !important;
+    background:url('../Portafolio/PiezasGraficas/img/bilbao/portada.jpg');
+    background-size:100% 100%;
+    margin:auto;
+}
+
+#img-infoBox{
+    display:none;
+    width:100%;
+    height:100%;
+    background:rgba(19, 25, 37, 0.93);
+}
+
+.selectItems{
+    position:relative;
+    margin:auto;
+    width:12px;
+    height:12px;
+    background:#51B7ED;
+    border-radius:50%;
+    cursor:pointer;
+    display:inline-block;
+}
+
+.selectItems:hover{
+    background:#113458;
+}
+
+
+.selectItems:visited{
+    background:#113458;
+}
+
+.selectItems.active{
+    background:#113458;
+}
+
+hr{color:white;
+    border:0.5px solid #9e9e9e;}
+    
+    .embed-container { 
+    position: relative;
+    top:0px; 
+    padding-bottom: 56.25%; 
+    overflow: hidden; 
+    max-width: 100%; 
+    text-align:center;
+    } 
+    
+    .embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 50px; 
+    width: 875px; 
+    height:550px;
+    }
+
+    .embed-container-diseno { 
+        position: relative;
+        top:30px; 
+        padding-bottom: 56.25%; 
+        height: 0; 
+        overflow: hidden;
+        width: 875px;
+        margin:auto;
+        } 
+
+    #text-link-project{
+        color:white; 
+        font-family: 'Myriad Pro Regular';
+        font-size:200%;
+        width:100%;
+        text-align:center;height:100%;
+        vertical-align:middle;
+    }
+
+    #hr_see{
+        display:block;
+        position:relative;
+        top:-20px;
+        width:44.5%;
+        left:-4px;
+        height:2px;
+        color:white;
+        background:white;
+    }
+
+    #seeDetails{
+        position:relative;
+        border:solid white 1px;
+        width:200px;
+        font-size:80%;
+        cursor:pointer;
+        margin:auto;
+        padding-top:2px;
+        padding-left:10px;
+    }
+
+    #detail-text{
+        font-size:90%;
+        width:70%;
+        text-align: center;
+        margin:auto
+    }
+
+    #detail-title{
+        font-size:200%;
+        letter-spacing: 6px;
+    }
+
+@media (max-width: 500px){
+    #container_frame{
+        position:relative;
+        width:351px;
+        height:198px;
+        margin:auto;
+        top:80px;
+    }
+
+    #box-info{
+        position:relative;
+        top:10px;
+        left:10px;
+    }
+
+    #plus{
+        display:none;
+    }
+
+    .embed-container iframe, .embed-container object, .embed-container embed { 
+        position: absolute; 
+        top: 0; 
+        left: 8px; 
+        width: 351px; 
+        height:198px;
+        }
+
+    #btn_exit{
+        position:relative;
+        top:-20px;
+    }
+
+    .embed-container-diseno { 
+        position: relative;
+        top:0px;
+        left:4px; 
+        height: 100px; 
+        overflow: hidden;
+        width: 340px;
+        margin:auto;
+    }
+    #img-piezasGraficas{
+        width:340px;
+        height:190px !important;
+    }
+    #text-link-project{
+        font-size:100%;
+
+    }
+    #hr_see{
+        display:none
+    }
+
+    #seeDetails{
+        top:-8px;
+    }
+
+    #detail-text{
+        width:98%;
+    }
+
+    #detail-title{
+        font-size:140%;
+    }
+}
+
+/* BOTONES PROJECTARQ*/
+
+#btn_video{
+    font-family:'Myriad Pro Bold';
+    position:absolute;
+    top:590px;
+    left:280px;
+    width:120px;
+    height:40px;
+    border-radius:12px;
+    color:white;
+    background:#23aeff;
+    padding-top:10px;
+    padding-left:2px;
+    letter-spacing: 4px;
+    font-size:80%;
+}
+
+@media (max-width: 880px){
+    #btn_video{
+        width:120px;
+        height:40px;
+        top:410px;
+        left:160px;
+        font-size:80%;
+    }
+}
+
+@media (max-width: 500px){
+    #btn_video{
+        top:255px;
+        left:70px;
+        width:90px;
+        height:30px;
+        font-size:50%;
+    }
+}

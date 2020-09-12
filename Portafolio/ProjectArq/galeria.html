@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=0"  />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="../../css/all.min.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/portfolio.css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css'>
+    <title>Arvirt</title>
+    
+<!--
+Mini Profile Template
+https://templatemo.com/tm-530-mini-profile
+--> 
+
+<style>
+    html:not(.touch) .gallery-image figcaption, .touch .gallery-image figcaption, .mfp-with-zoom .mfp-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0);
+      padding: 1em;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      font-weight: 600;
+      max-width: calc(100% - 9em);
+      line-height: 1.25;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    html:not(.touch) .gallery-image figcaption:before, .touch .gallery-image figcaption:before, .mfp-with-zoom .mfp-title:before, html:not(.touch) .gallery-image figcaption:after, .touch .gallery-image figcaption:after, .mfp-with-zoom .mfp-title:after {
+      content: "";
+      position: absolute;
+      background: rgba(0, 0, 0, 0.2);
+      width: 100%;
+      height: 100%;
+      padding: 1em;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+      z-index: -1;
+    }
+    html:not(.touch) .gallery-image figcaption:before, .touch .gallery-image figcaption:before, .mfp-with-zoom .mfp-title:before, html:not(.touch) .gallery-image figcaption:after, .touch .gallery-image figcaption:after, .mfp-with-zoom .mfp-title:after {
+      right: 100%;
+      bottom: 100%;
+    }
+    html:not(.touch) .gallery-image figcaption:after, .touch .gallery-image figcaption:after, .mfp-with-zoom .mfp-title:after {
+      left: 100%;
+      top: 100%;
+    }
+    html:not(.touch) .gallery-image figcaption.visible, html:not(.touch) .gallery-image:hover figcaption, .touch .gallery-image figcaption, .mfp-with-zoom .visible.mfp-title, .mfp-with-zoom.mfp-ready .mfp-title {
+      color: white;
+      text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+      -webkit-transition: all 0.2s ease 0.3s;
+      transition: all 0.2s ease 0.3s;
+    }
+    html:not(.touch) .gallery-image figcaption.visible:before, html:not(.touch) .gallery-image:hover figcaption:before, .touch .gallery-image figcaption:before, .mfp-with-zoom .visible.mfp-title:before, .mfp-with-zoom.mfp-ready .mfp-title:before, html:not(.touch) .gallery-image figcaption.visible:after, html:not(.touch) .gallery-image:hover figcaption:after, .touch .gallery-image figcaption:after, .mfp-with-zoom .visible.mfp-title:after, .mfp-with-zoom.mfp-ready .mfp-title:after {
+      opacity: 1;
+    }
+    html:not(.touch) .gallery-image figcaption.visible:before, html:not(.touch) .gallery-image:hover figcaption:before, .touch .gallery-image figcaption:before, .mfp-with-zoom .visible.mfp-title:before, .mfp-with-zoom.mfp-ready .mfp-title:before {
+      right: -1.5em;
+      bottom: -1.5em;
+    }
+    html:not(.touch) .gallery-image figcaption.visible:after, html:not(.touch) .gallery-image:hover figcaption:after, .touch .gallery-image figcaption:after, .mfp-with-zoom .visible.mfp-title:after, .mfp-with-zoom.mfp-ready .mfp-title:after {
+      left: -1.5em;
+      top: -1.5em;
+    }
+    
+    html {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizelegibility;
+    }
+    
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
+    
+    .gallery-image {
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .gallery-image:after {
+      border-width: 0;
+    }
+    .gallery-image img {
+      margin:auto;
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    html:not(.touch) .gallery-image {
+      overflow: hidden;
+    }
+    html:not(.touch) .gallery-image:hover:before {
+      border-width: 16px;
+    }
+    html:not(.touch) .gallery-image:hover:after {
+      border-width: 32px;
+    }
+    .touch .gallery-image figcaption {
+      top: auto;
+      bottom: 2em;
+    }
+    
+    .mfp-with-zoom .mfp-container, .mfp-with-zoom.mfp-bg {
+      opacity: 0;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+    .mfp-with-zoom.mfp-bg {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+    .mfp-with-zoom.mfp-ready .mfp-container {
+      opacity: 1;
+    }
+    .mfp-with-zoom.mfp-ready.mfp-bg {
+      opacity: 1;
+    }
+    .mfp-with-zoom.mfp-removing .mfp-container, .mfp-with-zoom.mfp-removing.mfp-bg {
+      opacity: 0;
+    }
+    .mfp-with-zoom img.mfp-img {
+      padding: 0;
+    }
+    .mfp-with-zoom .mfp-figure:after {
+      top: 0;
+      bottom: 0;
+    }
+    .mfp-with-zoom .mfp-container {
+      padding: 0;
+    }
+    .mfp-with-zoom .mfp-content {
+      overflow: hidden;
+    }
+    .mfp-with-zoom .mfp-bottom-bar {
+      top: auto;
+      bottom: 0;
+      margin-top: 0;
+    }
+    .mfp-with-zoom .mfp-title {
+      top: auto;
+      bottom: 2em;
+    }
+    
+    .mfp-arrow {
+      opacity: 1;
+      margin-top: 0 !important;
+      width: 20%;
+      height: 30%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+    .mfp-arrow:before, .mfp-arrow:after {
+      margin: 0;
+      border: none;
+      width: 2rem;
+      height: 2rem;
+      -webkit-transform: rotate(-45deg) translate(-50%, -100%);
+              transform: rotate(-45deg) translate(-50%, -100%);
+      opacity: 1;
+      top: 50%;
+      left: 50%;
+      -webkit-transition: all 0.15s;
+      transition: all 0.15s;
+    }
+    .mfp-arrow:active {
+      -webkit-transform: translateY(-50%) scale(0.95);
+              transform: translateY(-50%) scale(0.95);
+    }
+    
+    .mfp-arrow-left {
+      left: 0;
+    }
+    .mfp-arrow-left:before, .mfp-arrow-left:after {
+      border-top: 2px solid white;
+      border-left: 2px solid white;
+    }
+    .mfp-arrow-left:after {
+      margin-left: 2rem;
+    }
+    .mfp-arrow-left:hover:before, .mfp-arrow-left:active:before {
+      margin-left: 2rem;
+    }
+    .mfp-arrow-left:hover:after, .mfp-arrow-left:active:after {
+      margin-left: 0;
+    }
+    
+    .mfp-arrow-right {
+      right: 0;
+    }
+    .mfp-arrow-right:before, .mfp-arrow-right:after {
+      border-right: 2px solid white;
+      border-bottom: 2px solid white;
+    }
+    .mfp-arrow-right:after {
+      margin-left: 2rem;
+    }
+    .mfp-arrow-right:hover:before {
+      margin-left: 2rem;
+    }
+    .mfp-arrow-right:hover:after {
+      margin-left: 0;
+    }
+    
+    button.mfp-close {
+      opacity: 1;
+      margin-top: 0 !important;
+      width: 20%;
+      height: 30%;
+      font: 0/0 serif;
+      text-shadow: none;
+      color: transparent;
+    }
+    button.mfp-close:before, button.mfp-close:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: 0;
+      border: none;
+      width: 2rem;
+      height: 2rem;
+      opacity: 1;
+      -webkit-transition: all 0.15s;
+      transition: all 0.15s;
+      -webkit-transform-origin: 0 0;
+              transform-origin: 0 0;
+      border-top: 2px solid white;
+      border-left: 2px solid white;
+    }
+    button.mfp-close:before {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+    button.mfp-close:after {
+      -webkit-transform: rotate(135deg);
+              transform: rotate(135deg);
+    }
+    button.mfp-close:hover:before {
+      -webkit-transform: rotate(135deg);
+              transform: rotate(135deg);
+    }
+    button.mfp-close:hover:after {
+      -webkit-transform: rotate(315deg);
+              transform: rotate(315deg);
+    }
+    button.mfp-close:active {
+      -webkit-transform: scale(0.95);
+              transform: scale(0.95);
+    }
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    [id=footer] {
+      margin-top: 10vh;
+      padding: 10vh 0;
+      text-align: center;
+    }
+    [id=footer] .container {
+      position: relative;
+    }
+    [id=footer] .container:before, [id=footer] .container:after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 20px;
+      z-index: 10;
+      border-top: 2px solid;
+      width: 10%;
+      margin-bottom: 10vh;
+    }
+    [id=footer] .container:after {
+      left: auto;
+      right: 20px;
+    }
+    [id=footer] * {
+      display: block;
+    }
+    [id=footer] * + * {
+      margin-top: 5vh;
+    }
+    [id=footer] .logo {
+      font-weight: 600;
+      font-size: 1.5em;
+    }
+    [id=footer] .copy {
+      text-transform: uppercase;
+      font-size: 0.75em;
+      font-weight: 600;
+    }
+    </style>
+
+  </head>
+  <body style='background:url("../../img/bg2.jpg");background-size:100% auto;'>
+    <!-- Welcome Section -->
+    <section >
+<div class="header" >
+	<div class="buttons-header"> 
+		  <div id='btn1' class="btn-menu-b"><a href='../../index.html#nosotros'> NOSOTROS </a></div> 
+		  <div id='btn2' class="btn-menu-b"><a href="../../portafolio.html"> PORTAFOLIO</a></div>
+		  <div id='btn3' class="btn-menu-b"><a href="../../hablemos.html"> HABLEMOS</a></div>
+		  <div id="btn-div" >|</div>
+		  <div id='btn4' class=" btn-menu-b"><p style='font-weight:bold;display:inline-block;color:#004A7E'>ESP</p><a href='#'> ENG</a></div>
+	  </div>
+</div> 
+<img class="logo" src="../../img/logo.png" width=80 />
+</section>
+<section class="mb-5 mt-3">
+    <div id="container_proyectArq" class="mb-5">
+        <div id="frame_projectArq">
+            <article class='gallery text-center mb-5'>
+                <a class='gallery-link' href='img/renders/1.jpg' style="position:relative">
+                  <figure id="firstImg" class='gallery-image'>
+                    <img height='1000' src='img/renders/1.jpg' width='1000'>
+                    <figcaption>Render interno</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='img/renders/2.jpg' style='display:none'>
+                  <figure class='gallery-image'>
+                    <img height='1600' src='img/renders/2.jpg' width='1600' style='display:none'>
+                    <figcaption>Render interno</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='img/renders/3.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1600' src='img/renders/3.jpg' width='1200' style='display:none'>
+                    <figcaption>Render interno</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='img/renders/4.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1200' src='img/renders/4.jpg' width='1200' style='display:none'>
+                    <figcaption>Render externo</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='img/renders/5.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1000' src='img/renders/5.jpg' width='1400' style='display:none'>
+                    <figcaption>Render externo</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='img/renders/6.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1200' src='img/renders/6.jpg' width='1000' style='display:none'>
+                    <figcaption>Render planta</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='img/renders/7.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1400' src='img/renders/7.jpg' width='1000' style='display:none'>
+                    <figcaption>Render planta</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='img/renders/8.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1600' src='img/renders/8.jpg' width='1600' style='display:none'>
+                    <figcaption>Render planta</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='img/renders/9.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1400' src='img/renders/9.jpg' width='1000' style='display:none'>
+                    <figcaption>Render panorámico</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='img/renders/10.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1400' src='img/renders/10.jpg' width='1000' style='display:none'>
+                    <figcaption>Render 360</figcaption>
+                  </figure>
+                </a>
+                <a class='gallery-link' href='img/renders/11.jpg'>
+                  <figure class='gallery-image'>
+                    <img height='1400' src='img/renders/11.jpg' width='1000' style='display:none'>
+                    <figcaption>Render 360</figcaption>
+                  </figure>
+                </a>
+              </article></div>
+       <a href="index.html" > <div id="btn_exit" class="mb-5" style="top:0px;left:50px"></div></a>
+    </div>
+</section>
+<section class="mb-5">
+    &nbsp;
+</section>
+</section>
+    <!-- Contact section -->
+    <section id="footerSection">
+      <div id="infoFooter" class="row">
+          <div class="col-12 col-md-4">
+          <img class="ml-2 logoFooter" src="../../img/logoArvirtBlancoFooter.png" width=140 />
+          <div id="social">
+            <div class="socialContent">
+            <svg id="btn_facebook" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" viewBox="0 0 320 512" class="svg-inline--fa fa-facebook-f mx-2">
+              <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" class=""></path>
+            </svg>
+            <svg id="btn_instagram" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" viewBox="0 0 448 512" class="svg-inline--fa fa-instagram mx-2">
+              <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" class=""></path>
+            </svg>
+            <svg id="btn_linkedin" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" viewBox="0 0 448 512" class="svg-inline--fa fa-linkedin-in mx-2">
+              <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" class=""></path>
+            </svg>
+            </div>
+            <div class="parqueContent">
+            <img class="logoParquesoft" src="../../img/logoParquesoft.png" width=120 />
+            </div>
+          </div>
+          </div>
+       
+          <div class="col-12 col-md-5 pt-5">
+            <div class="text-left">
+            <div class="cuadroInfo1 mr-0 mt-4 row">
+              <div class="col-6">
+              <div class="mb-3"><a class="linkFooter" href="../../index.html#nosotros">NOSOTROS</a></div>
+              <div class="mb-3"><a class="linkFooter" href="../../portafolio.html">PORTAFOLIO</a></div>
+              <div class="mb-2" id="footerWhiteBox">▄</div>
+              </div>
+              <div class="col-6">
+              <div class="mb-3"><a class="linkFooter" href="../../hablemos.html">HABLEMOS</a></div>
+              <div class="mb-3"><a class="linkFooter" href="../../legal.html">LEGAL</a></div>
+              </div>
+            </div>	
+            </div>
+          </div>
+        <div class="col-12 col-md-3">
+          <div class="text-left">
+          <div class="cuadroInfo2 mr-0">
+            <div class="mt-4"><div class="titleContactFooter">COLOMBIA</div>
+            <div class="itemContactFooter">Cra 31 # 15-87 San luis, Pereira</div>
+            <div class="itemContactFooter">+57 315 8335813</div>
+            </div>
+          </div>
+          </div>
+         </div>
+      </div>
+      <div id="footer" class="row">
+          <div class="col-12">
+          <p class="text-center tm-copyright-text">
+            &copy; 2020 Arvirt. Todos los derechos reservados.
+          </P>
+          </div>
+      </div>
+        <!-- container -->
+    </section>
+    <!-- section -->
+
+    <div id="btn_openFloatMenu">
+      <div style="position:relative;width:8px;height:8px;background:#51B7ED;border-radius:50%;margin:10px;margin-top:20px;"></div>
+      <div style="position:relative;width:8px;height:8px;background:#51B7ED;border-radius:50%;margin:10px;margin-top:20px;"></div>
+      <div style="position:relative;width:8px;height:8px;background:#51B7ED;border-radius:50%;margin:10px;margin-top:20px;"></div>
+      </div>
+     
+      <section id="floatMenu">
+        <div id="btn_closeFloatMenu">X</div>  
+        <img class="logo" src="../../img/logoArvirtBlancoHeader.png" width=80 style="position:absolute;left:40px"/>
+        <div id="floatMenuContainer">
+          <div id="floatLeftContainer">
+            <div id="socialMenuContainer">
+              <div class="my-1" id="btn_floatFacebook">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" viewBox="0 0 320 512" class="svg-inline--fa fa-facebook-f mx-2 mb-1">
+                  <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" class=""></path>
+                  </svg>
+              </div>
+              <div class="my-1" id="btn_floatInstagram">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" viewBox="0 0 448 512" class="svg-inline--fa fa-instagram mx-2">
+                  <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" class=""></path>
+                  </svg>
+              </div>
+              <div class="my-1" id="btn_floatLinkedin">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" viewBox="0 0 448 512" class="svg-inline--fa fa-linkedin-in mx-2">
+                  <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" class=""></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div id="floatRightMenuContainer">
+              <div class="mt-5 active" id="btn_floatNosotros">
+                NOSOTROS
+                <div id="floatNosotros" class="inactive_btnFloat my-0">▬</div>
+              </div>
+              <div class="mt-3" id="btn_floatPortafolio">
+                PORTAFOLIO
+                <div id="floatPortafolio" class="inactive_btnFloat my-0">▬</div>
+              </div>
+              <div class="mt-3" id="btn_floatHablemos">
+                HABLEMOS
+              <div id="floatHablemos" class="inactive_btnFloat my-0">▬</div>
+              </div>
+          </div>
+        </div>
+        <div id="floatBottomMenuContainer">
+          <div class="mt-4">Cr 31 # 15 - 87 San Luis, Pereira</div>
+          <div class="mt-2" style="font-size:60%;letter-spacing: 2px;">&copy; 2020 Arvirt. Todos los derechos reservados.</div>
+        </div>
+      </section>
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/parallax.min.js"></script>
+	  <script src="../../js/home.js"></script>
+    <script src="../../js/projectArq.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+  
+      <script id="rendered-js" >
+(function () {
+  (function () {
+    var logo, logo_css;
+    logo = '<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>codepen-logo</title><path d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zM7.139 21.651l1.35-1.35a.387.387 0 0 0 0-.54l-3.49-3.49a.387.387 0 0 0-.54 0l-1.35 1.35a.39.39 0 0 0 0 .54l3.49 3.49a.38.38 0 0 0 .54 0zm6.922.153l2.544-2.543a.722.722 0 0 0 0-1.018l-6.582-6.58a.722.722 0 0 0-1.018 0l-2.543 2.544a.719.719 0 0 0 0 1.018l6.58 6.579c.281.28.737.28 1.019 0zm14.779-5.85l-7.786-7.79a.554.554 0 0 0-.788 0l-5.235 5.23a.558.558 0 0 0 0 .789l7.79 7.789c.216.216.568.216.785 0l5.236-5.236a.566.566 0 0 0 0-.786l-.002.003zm-3.89 2.806a.813.813 0 1 1 0-1.626.813.813 0 0 1 0 1.626z" fill="#FFF" fill-rule="evenodd"/></svg>';
+    logo_css = '.mM{display:block;border-radius:50%;box-shadow:0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);position:fixed;bottom:1em;right:1em;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-transition:all 240ms ease-in-out;transition:all 240ms ease-in-out;z-index:9999;opacity:0.75}.mM svg{display:block}.mM:hover{opacity:1;-webkit-transform:scale(1.125);transform:scale(1.125)}';
+  })();
+
+  $('.gallery-link').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    closeBtnInside: false,
+    mainClass: 'mfp-with-zoom mfp-img-mobile',
+    image: {
+      verticalFit: true,
+      titleSrc: function (item) {
+        return item.el.find('figcaption').text() || item.el.attr('title');
+      } },
+
+    zoom: {
+      enabled: true },
+
+    // duration: 300
+    gallery: {
+      enabled: true,
+      navigateByImgClick: false,
+      tCounter: '' },
+
+     });
+
+    $('#firstImg').trigger('click');
+
+}).call(this);
+    </script>
+  </body>
+</html>

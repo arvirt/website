@@ -1,271 +1,672 @@
 @font-face {
-font-family: 'Myriad Pro Regular';
-font-style: normal;
-font-weight: normal;
-src: local('Myriad Pro Regular'), url('../webfonts/MYRIADPRO-REGULAR.woff') format('woff');
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('../webfonts/MYRIADPRO-REGULAR.woff') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'Myriad Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Bold'), url('../webfonts/MYRIADPRO-BOLD.woff') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'Myriad Pro Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Light'), url('../webfonts/MyriadPro-Light.woff') format('woff');
+    }
+    
+    html {
+      -webkit-font-smoothing: antialiased;
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Myriad Pro Regular';
+      font-size: 18px;
+      font-weight: 400;
+      color: #6b6b6b;
+      overflow-x: hidden;
+      background:#113458;
+      padding-bottom:0px;
+    }
+    
+    a,
+    button {
+      transition: all 0.3s ease;
+    }
+    
+    a:hover {
+      text-decoration: none;
+    }
+    
+    .btn-menu a{
+        color:#ADD8F0;
+    }
+    
+    .btn-menu a:hover{
+        color:white;
+    }
+    
+    .btn-menu-b a{
+        color:#47bcf1;
+    }
+    
+    .btn-menu-b a:hover{
+        color:#004A7E;
+    }
+    
+    .active a{
+        font-weight:bold;color:white;
+    }
+    
+    .active-b a{
+        font-weight:bold;color:#004A7E;
+    }
+    
+    /* Header (Menu superior)  */
+    
+    .header{
+        position:absolute;
+        display:inline-block;
+        top:0px;
+        width:100%;
+        z-index:1;
+        height:60px;
+        padding:10px;
+        padding-bottom:10px;
+        text-align:right;
+    }
+    
+    .logo{
+        position:absolute;
+        left:40px;
+        top:20px;
+    }
+    
+    .buttons-header{
+        
+        font-family: 'Myriad Pro Light';
+        color:#ADD8F0;
+        width:100%;
+        margin:auto;
+        margin-top:0px;
+        padding-left:20px;
+        text-align:right;
+    }
+    
+    .buttons-header a{
+        font-family: 'Myriad Pro Light';
+    }
+    
+    #btn1{
+        
+        width:120px;
+        position:relative;
+        display:inline-block;
+        letter-spacing:4px;
+        text-align:center;
+        margin-left:40px;
+        top:-6px;
+        font-size:70%;
+    }
+    
+    #btn2{
+        
+        width:120px;
+        position:relative;
+        display:inline-block;
+        letter-spacing:4px;
+        text-align:center;
+        top:-6px;
+        font-size:70%;
+    }
+     
+     
+    #btn3{
+        
+        width:120px;
+        position:relative;
+        display:inline-block;
+        letter-spacing:4px;
+        text-align:center;
+        top:-6px;
+        font-size:70%;
+    }
+    
+    
+    #btn-div {
+        width:40px;
+        position:relative;
+        display:inline-block;
+        text-align:center;
+        top:-6px;
+        font-size:70%;
+    }
+     
+    
+    #btn4{
+        
+        width:120px;
+        position:relative;
+        display:inline-block;
+        letter-spacing:4px;
+        text-align:center;
+        top:-6px;
+        font-size:70%;
+    }
+    
+    /* Seccion del footer /*/
+    #footerSection {
+      height:300px;
+      margin:0px;
+      margin-bottom:0px;
+      background:#153355;
+    }
+    
+    
+    #infoFooter{
+        padding-top:70px;
+        height:300px;
+        background:#153355;
+    }
+    
+    .logoFooter{
+        position:relative;
+        left:40%;
+        top:0px;
+        }
+    
+    #footer{
+        bottom:4px;
+        background:6b6b6b;
+    }
+    
+    #footer p{
+        font-family:'Myriad Pro Regular';
+        font-size:80%;
+        color:white;
+        font-weight:normal;
+        background:#153355;
+        margin-bottom:0px;
+    }
+    
+    .cuadroInfo1{
+        position:relative;
+        width:70%;
+        height:80px;
+        left:10%;
+        color:white;
+        border-right:1px solid white;
+    }
+    
+    .cuadroInfo2{
+        
+        width:80%;
+        height:100px;
+        color:white;
+    }
+    
+    .titleContactFooter{
+        font-weight:bold;
+        color:#A9CDE1;
+    }
+    
+    .itemContactFooter{
+        font-weight:normal;
+        color:#A7BAC2;
+        font-size:80%;
+    }
+    
+    #social{
+        position:relative;
+        left:40%;
+        width:160px;
+        height:40px;
+        margin-top:30px;
+        color:white;
+    }
+    
+    .socialContent{
+        position:relative;
+        width:80%;
+        margin:auto;
+    }
+    
+    .svg-inline--fa{
+        width:20px;
+        height:20px;
+        color:#eee;
+        cursor:pointer;
+    }
+    
+    .svg-inline--fa:hover{
+        width:22px;
+        height:22px;
+        color:#fff;
+        cursor:pointer;
+    }
+    
+    .parqueContent{
+        position:relative;
+        width:80%;
+        margin:auto;
+    }
+    
+    .logoParquesoft{
+        position:relative;
+        margin:auto;
+        margin-top:30px;
+    }
+        
+    .linkFooter{
+        width:100px;
+        color:#A7BAC2;
+    }
+    .linkFooter:hover{
+        color:#fff;
+    }
+    
+    #box-info{
+        position:absolute;
+        right:-60px;
+        bottom:26%;
+        text-align:center;
+        width:340px;
+        height:220px;
+        background:#113458;
+        padding:24px;
+        padding-top:32px;
+        z-index:2
+    }
+    
+    h6.title-info{
+        color:#40a7d6;
+        letter-spacing:4.8px;
+        font-size:80%;
+    }
+    
+    hr.info-text{
+        position:relative;
+        top:-8px
+    }
+    
+    p.text{
+        color:#bebebe;
+        font-size:66%;
+        letter-spacing:1px;
+    }
+    
+    #btn-video{
+        transition: background 1s ease;
+        -moz-transition: background 1s ease;
+        -webkit-transition: background 1s ease;
+        -o-transition: background 1s ease;
+        background:url("../img/Portafolio/video.jpg");
+        background-size:100% 100%;
+        display:inline-block;
+        cursor:pointer;
+        margin:20px
+    }
+    #btn-video:hover{
+        background:url("../img/Portafolio/video_over.jpg");
+        background-size:100% 100%;
+    }
+    
+    #btn-animacion3D{
+        transition: background 1s ease;
+        -moz-transition: background 1s ease;
+        -webkit-transition: background 1s ease;
+        -o-transition: background 1s ease;
+        background:url("../img/Portafolio/animacion3D.jpg");
+        background-size:100% 100%;
+        display:inline-block;
+        cursor:pointer;
+        margin:20px
+    }
+    
+    #btn-animacion3D:hover{
+        background:url("../img/Portafolio/animacion3D_over.jpg");
+        background-size:100% 100%;
+    }
+    
+    #btn-animacion2D{
+        transition: background 1s ease;
+        -moz-transition: background 1s ease;
+        -webkit-transition: background 1s ease;
+        -o-transition: background 1s ease;
+        background:url("../img/Portafolio/animacion2D.jpg");
+        background-size:100% 100%;
+        display:inline-block;
+        cursor:pointer;
+        margin:20px
+    }
+    
+    #btn-animacion2D:hover{
+        background:url("../img/Portafolio/animacion2D_over.jpg");
+        background-size:100% 100%;
+    }
+    
+    #btn-realidadVirtual{
+        transition: background 1s ease;
+        -moz-transition: background 1s ease;
+        -webkit-transition: background 1s ease;
+        -o-transition: background 1s ease;
+        background:url("../img/Portafolio/realidadvirtual.jpg");
+        background-size:100% 100%;
+        display:inline-block;
+        cursor:pointer;
+        margin:20px
+    }
+    
+    #btn-realidadVirtual:hover{
+        background:url("../img/Portafolio/realidadvirtual_over.jpg");
+        background-size:100% 100%;
+    }
+    
+    #btn-realidadAumentada{
+        transition: background 1s ease;
+        -moz-transition: background 1s ease;
+        -webkit-transition: background 1s ease;
+        -o-transition: background 1s ease;
+        background:url("../img/Portafolio/realidadaumentada.jpg");
+        background-size:100% 100%;
+        display:inline-block;
+        cursor:pointer;
+        margin:20px
+    }
+    
+    #btn-realidadAumentada:hover{
+        background:url("../img/Portafolio/realidadaumentada_over.jpg");
+        background-size:100% 100%;
+    }
+    
+    #btn-aulasVirtuales{
+        transition: background 1s ease;
+        -moz-transition: background 1s ease;
+        -webkit-transition: background 1s ease;
+        -o-transition: background 1s ease;
+        background:url("../img/Portafolio/aulasvirtuales.jpg");
+        background-size:100% 100%;
+        display:inline-block;
+        cursor:pointer;
+        margin:20px
+    }
+    
+    #btn-aulasVirtuales:hover{
+        background:url("../img/Portafolio/aulasvirtuales_over.jpg");
+        background-size:100% 100%;
+    }
+    
+    #btn-gamification{
+        transition: background 1s ease;
+        -moz-transition: background 1s ease;
+        -webkit-transition: background 1s ease;
+        -o-transition: background 1s ease;
+        background:url("../img/Portafolio/gamification.jpg");
+        background-size:100% 100%;
+        display:inline-block;
+        cursor:pointer;
+        margin:20px
+    }
+    
+    #btn-gamification:hover{
+        background:url("../img/Portafolio/gamification_over.jpg");
+        background-size:100% 100%;
+    }
+    
+    #btn-projectArq{
+        
+        transition: background 1s ease;
+        -moz-transition: background 1s ease;
+        -webkit-transition: background 1s ease;
+        -o-transition: background 1s ease;
+        background:url("../img/Portafolio/projectArq.jpg");
+        background-size:100% 100%;
+        display:inline-block;
+        cursor:pointer;
+        margin:20px
+    }
+    
+    #btn-projectArq:hover{
+        background:url("../img/Portafolio/projectArq_over.jpg");
+        background-size:100% 100%;
+    }
+    
+    #btn-piezasGraficas{
+        transition: background 1s ease;
+        -moz-transition: background 1s ease;
+        -webkit-transition: background 1s ease;
+        -o-transition: background 1s ease;
+        background:url("../img/Portafolio/piezasgraficas.jpg");
+        background-size:100% 100%;
+        display:inline-block;
+        cursor:pointer;
+        margin:20px
+    }
+    
+    #btn-piezasGraficas:hover{
+        background:url("../img/Portafolio/piezasgraficas_over.jpg");
+        background-size:100% 100%;
+    }
+    
+    .btn-portfolio{
+        width:450px;
+        height:360px;
+    }
+
+    .btn-menuFloat{
+        position:relative;
+        width:8px;
+        height:8px;
+        background:#51B7ED;
+        border-radius:50%;
+        margin:10px;
+        margin-top:20px;
+    }
+
+    .btn-menuFloat:hover{
+        background:#153355;
+    }
+
+    #floatMenu{
+        position:fixed;
+        top:0px;
+        left:0px;
+        width:100vw;
+        height:100vh;
+        background:rgba(21, 173, 243, 0.94);
+        z-index:10;
+        display:none
+    }
+    
+    #btn_openFloatMenu{
+        position:fixed;
+        left:10px;
+        top:44%;
+        width:24px;
+        height:120px;
+        border-radius:12px;
+        cursor:pointer
+    }
+
+    #floatRightMenuContainer{
+        position:absolute;
+        right:0px;
+        width:40vw;
+        height:100%;
+        padding-top:60px;
+        font-size:130%;
+        font-family: 'Myriad Pro Semibold';
+        letter-spacing: 10px;
+        color:white;
+    }
+    
+    #floatBottomMenuContainer{
+        position:absolute;
+        bottom:0px;
+        height:100px;
+        width:100vw;
+        color:white;
+        text-align:center;
+        font-family: 'Myriad Pro Thin';
+        letter-spacing:4px
+    }
+
+    #btn_closeFloatMenu{
+        position:absolute;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana;
+        cursor:pointer;
+        right:50px;
+        top:24px;
+        color:white;
+        font-size:30px;
+        z-index:10;
+    }
+    
+    #btn_floatNosotros{
+        position:relative;
+        cursor:pointer;
+        width:120px;
+    }
+
+    #btn_floatPortafolio{
+        position:relative;
+        cursor:pointer;
+        width:120px;
+    }
+
+    #btn_floatHablemos{
+        position:relative;
+        cursor:pointer;
+        width:120px;
+    }
+
+    .active_btnFloat{
+        position:relative;
+        color:#153355;
+        font-size:30px !important;
+        font-weight:bold;
+        height:20px;
+        top:-10px;
+    }
+
+    .inactive_btnFloat{
+        position:relative;
+        color:#153355;
+        font-size:30px !important;
+        font-weight:bold;
+        height:20px;
+        top:-10px;
+        visibility:hidden;
+    }
+
+#floatMenuContainer{
+    position:absolute;
+    top:20%;
+    height:64vh;
+    width:100vw;
 }
 
-@font-face {
-font-family: 'Myriad Pro Bold';
-font-style: normal;
-font-weight: normal;
-src: local('Myriad Pro Bold'), url('../webfonts/MYRIADPRO-BOLD.woff') format('woff');
+#floatLeftContainer{
+    position:absolute;
+    left:0px;
+    width:100px;
+    height:100%;
 }
 
-@font-face {
-font-family: 'Myriad Pro Light';
-font-style: normal;
-font-weight: normal;
-src: local('Myriad Pro Light'), url('../webfonts/MyriadPro-Light.woff') format('woff');
+#socialMenuContainer{
+    position:relative;
+    margin:auto;
+    width:80px;
+    vertical-align:middle;
+    top:40%
+}
+@media (max-width: 960px){
+    #floatRightMenuContainer{
+        width:40vw;
+        top:-90px;
+    }
+    #floatBottomMenuContainer{
+        bottom:40px;
+    }
+    #socialMenuContainer{
+        top:26%;
+    }
 }
 
-html {
-  -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
-}
+@media (max-width: 500px){
+    #btn1{
+        display:none;
+    }
+    
+    #btn2{
+        display:none;
+    }
+    
+    #btn3{
+        display:none;
+    }
 
-body {
-  font-family: 'Myriad Pro Regular';
-  font-size: 18px;
-  font-weight: 400;
-  color: #6b6b6b;
-  overflow-x: hidden;
-  background:#113458;
-  padding-bottom:0px;
-}
+    #btn-div{
+        display:none;
+    }
 
-a,
-button {
-  transition: all 0.3s ease;
-}
+    #socialMenuContainer{
+        top:30%;
+    }
 
-a:hover {
-  text-decoration: none;
-}
+    #floatRightMenuContainer{
+        width:70vw;
+        height:100%;
+        top:0px;
+    }
 
-.btn-menu a{
-	color:#ADD8F0;
-}
+    #floatBottomMenuContainer{
+        font-size:80%;
+        height:150px;
+    }
 
-.btn-menu a:hover{
-	color:white;
-}
+    #infoFooter{
+        padding-top:70px;
+        height:600px;
+        text-align:center;
+    }
 
-.btn-menu-b a{
-	color:#47bcf1;
-}
+    .logoFooter{
+        left:0px;
+    }
 
-.btn-menu-b a:hover{
-	color:#004A7E;
-}
+    #social{
+        margin:auto;
+        left:0px;
+        top:20px;  
+    }
 
-.active a{
-	font-weight:bold;color:white;
-}
+    .cuadroInfo1{
+        width:100%;
+        left:0px;
+        margin:auto;
+        text-align:center;
+        border-right:none;
+        padding-bottom:0px;
+    }
 
-.active-b a{
-	font-weight:bold;color:#004A7E;
-}
+    #footerWhiteBox{
+        display:none;
+    }
 
-/* Header (Menu superior)  */
+    .cuadroInfo2{
+        width:100%;
+        text-align:center;
+        top:0px;
+    }
 
-.header{
-	position:fixed;
-	display:inline-block;
-	top:0px;
-	width:100%;
-	z-index:1;
-	height:60px;
-	padding:10px;
-	padding-bottom:10px;
-	text-align:right;
-}
-
-.logo{
-	
-	position:absolute;
-	left:20px;
-	top:20px;
-	
-}
-
-.buttons-header{
-	
-	font-family: 'Myriad Pro Light';
-	color:#ADD8F0;
-	width:100%;
-	margin:auto;
-	margin-top:0px;
-	padding-left:20px;
-	text-align:right;
-}
-
-.buttons-header a{
-	font-family: 'Myriad Pro Light';
-}
-
-#btn1{
-	
-	width:120px;
-	position:relative;
-	display:inline-block;
-	letter-spacing:4px;
-	text-align:center;
-	margin-left:40px;
-	top:-6px;
-	font-size:70%;
-}
-
-#btn2{
-	
-	width:120px;
-	position:relative;
-	display:inline-block;
-	letter-spacing:4px;
-	text-align:center;
-	top:-6px;
-	font-size:70%;
-}
- 
- 
-#btn3{
-	
-	width:120px;
-	position:relative;
-	display:inline-block;
-	letter-spacing:4px;
-	text-align:center;
-	top:-6px;
-	font-size:70%;
-}
-
-
-.btn-div {
-	width:40px;
-	position:relative;
-	display:inline-block;
-	text-align:center;
-	top:-6px;
-	font-size:70%;
-}
- 
-
-#btn4{
-	
-	width:120px;
-	position:relative;
-	display:inline-block;
-	letter-spacing:4px;
-	text-align:center;
-	top:-6px;
-	font-size:70%;
-}
-
-/* Seccion del footer /*/
-#footerSection {
-  height:400px;
-  margin:0px;
-  margin-bottom:0px;
-  background:#153355;
-}
-
-
-#infoFooter{
-	padding-top:70px;
-	height:380px;
-	
-}
-
-.logoFooter{
-	position:relative;
-	left:40%;
-	top:10px;
-	}
-
-#footer{
-	bottom:4px;
-	background:6b6b6b;
-}
-
-#footer p{
-	font-family:'Myriad Pro Regular';
-	font-size:80%;
-	color:white;
-	font-weight:normal;
-}
-
-.cuadroInfo1{
-	position:relative;
-	width:70%;
-	height:200px;
-	left:10%;
-	color:white;
-	border-right:1px solid white;
-}
-
-.cuadroInfo2{
-	
-	width:80%;
-	height:200px;
-	color:white;
-}
-
-.titleContactFooter{
-	font-weight:bold;
-	color:#A9CDE1;
-}
-
-.itemContactFooter{
-	font-weight:normal;
-	color:#A7BAC2;
-	font-size:80%;
-}
-
-#social{
-	position:relative;
-	left:40%;
-	width:200px;
-	height:40px;
-	margin-top:50px;
-	color:white;
-}
-
-.socialContent{
-	position:relative;
-	width:60%;
-	margin:auto;
-}
-
-.svg-inline--fa{
-	width:20px;
-	height:20px;
-	color:#eee;
-	cursor:pointer;
-}
-
-.svg-inline--fa:hover{
-	width:22px;
-	height:22px;
-	color:#fff;
-	cursor:pointer;
-}
-
-.parqueContent{
-	position:relative;
-	width:80%;
-	margin:auto;
-}
-
-.logoParquesoft{
-	position:relative;
-	margin:auto;
-	margin-top:40px;
-}
-	
-.linkFooter{
-	width:100px;
-	color:#A7BAC2;
-}
-.linkFooter:hover{
-	color:#fff;
+    .btn-portfolio{
+        width:315px;
+        height:252px;
+    }
 }
